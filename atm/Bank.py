@@ -4,7 +4,7 @@ class Bank to create account for users
 import uuid
 import os
 
-class Bank:
+class Bank():
 
     def __init__(self):
         pass
@@ -28,10 +28,11 @@ class Bank:
 
     @staticmethod
     def create_text_file_for_account(account_number,name,phone_number,id):
-        with open("../accounts/"+account_number+".txt","a+") as f:
+        with open(account_number+".txt","a+") as f:
             f.write("name : " + name + "\n")
             f.write("phone_number : "+phone_number + " \n")
             f.write("id : "+id + "\n")
+            f.write("balance : "+"0" + "\n")
             os.fsync(f)
             f.close()
 
@@ -44,13 +45,37 @@ class Bank:
         return account_number
 
     def create_card_for_account(self,account_number):
-        with open("../accounts/"+account_number+".txt", "r+") as out_file:
+        with open(account_number+".txt", "r+") as out_file:
             buf = out_file.readlines()
             out_file.seek(0)
             new_card = self.create_random_card_number()
-            buf.insert(3,"card :"+new_card+"\n")
+            buf.insert(4,"card :"+new_card+"\n")
             out_file.writelines(buf)
             out_file.close()
-        f = open("../refrence/cards.txt", "a+")
+        f = open(account_number+".txt", "a+")
         f.write(new_card + " : " + account_number + "\n")
         f.close
+
+
+bank=Bank()
+# bank.create_bank_account("ahmad", "12", "12")
+bank.create_card_for_account("833896336")
+# method returns value of balance from file of account
+def get_balance(account_number):
+    with open(account_number + ".txt", "r+") as out_file:
+        buf = out_file.readlines()
+        balance=buf[3] # pointer variable balance to place of value balance
+        balance=balance[10:]# get the number without string 'balance :'
+        out_file.close()
+    return balance
+
+value=get_balance("833896336")
+print (value)
+def upDate_balance(self,account_number):
+        with open(account_number + ".txt", "wr+") as out_file:
+            out_file.seek(0)
+            buf = out_file.readlines()
+            buf[3]="aaa"
+            out_file.close()
+
+upDate_balance("833896336")

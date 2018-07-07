@@ -9,6 +9,7 @@ class Bank:
     def __init__(self):
         pass
 
+
     @staticmethod
     def create_random_account_number():
         account_number = str(uuid.uuid4().int >> 64)[0:9]

@@ -11,8 +11,11 @@ class Atm:
         if(exists("account_number.txt")):
             value = input("Please, Enter value to withdraw money:")
             value = int(value)
-            # get value of balance
-            balance=1000 #f.g 1000
+
+            with open("../accounts/" + account_number + ".txt", "r+") as f:
+                balance=1000     # get value of balance
+                os.fsync(f)
+
             if( balance >= value):
                 balance=balance-value
                 #upDate_balance(balance)

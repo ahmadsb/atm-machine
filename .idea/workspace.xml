@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="c16a1c75-f0ae-4b74-993b-2d85fdf01e6e" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/atm/Atm.py" beforeDir="false" afterPath="$PROJECT_DIR$/atm/Atm.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/atm/Bank.py" beforeDir="false" afterPath="$PROJECT_DIR$/atm/Bank.py" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/venv/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -21,11 +20,17 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file leaf-file-name="Atm.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/atm/Atm.py">
+      <file leaf-file-name="Bank.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/atm/Bank.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="78">
-              <caret line="15" column="34" lean-forward="true" selection-start-line="15" selection-start-column="34" selection-end-line="15" selection-end-column="34" />
+            <state relative-caret-position="163">
+              <caret line="29" column="74" selection-start-line="29" selection-start-column="74" selection-end-line="29" selection-end-column="74" />
+              <folding>
+                <element signature="e#47#58#0" expanded="true" />
+                <element signature="e#115#119#0" />
+                <element signature="e#671#919#0" />
+                <element signature="e#1262#1689#0" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -80,7 +85,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -123,6 +127,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -247,27 +252,26 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.5085929" side_tool="true" visible="true" weight="0.16535433" />
       <window_info anchor="bottom" id="Database Changes" order="10" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4914071" weight="0.38391846" />
       <window_info anchor="bottom" id="Version Control" order="12" />
       <window_info anchor="bottom" id="Python Console" order="8" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4914071" weight="0.38391846" />
       <window_info anchor="bottom" id="Terminal" order="9" />
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24963397" />
       <window_info anchor="bottom" id="Docker" order="11" show_stripe_button="false" />
       <window_info anchor="right" id="Database" order="3" />
       <window_info anchor="right" id="SciView" order="4" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Find" order="1" sideWeight="0.49785176" weight="0.3295583" />
       <window_info anchor="bottom" id="Concurrent Activities Diagram" order="13" sideWeight="0.49785176" weight="0.3295583" />
@@ -285,6 +289,16 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/atm/Atm.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="15" column="34" lean-forward="true" selection-start-line="15" selection-start-column="34" selection-end-line="15" selection-end-column="34" />
+          <folding>
+            <element signature="e#746#1061#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/atm/atmtest.py">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -299,11 +313,8 @@
           <folding>
             <element signature="e#47#58#0" expanded="true" />
             <element signature="e#115#119#0" />
-            <element signature="e#192#271#0" />
-            <element signature="e#336#410#0" />
-            <element signature="e#484#572#0" />
-            <element signature="e#991#1202#0" />
-            <element signature="e#1266#1693#0" />
+            <element signature="e#671#919#0" />
+            <element signature="e#1262#1689#0" />
           </folding>
         </state>
       </provider>
@@ -342,11 +353,8 @@
           <folding>
             <element signature="e#47#58#0" expanded="true" />
             <element signature="e#115#119#0" />
-            <element signature="e#192#271#0" />
-            <element signature="e#336#410#0" />
-            <element signature="e#484#572#0" />
-            <element signature="e#991#1202#0" />
-            <element signature="e#1266#1693#0" />
+            <element signature="e#671#919#0" />
+            <element signature="e#1262#1689#0" />
           </folding>
         </state>
       </provider>
@@ -375,15 +383,6 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/accounts/126434471.txt" />
     <entry file="file://$PROJECT_DIR$/accounts/182345721.txt" />
-    <entry file="file://$PROJECT_DIR$/atm/Accounts.txt">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/atm/Transition.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/atm/__init__.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/atm/atmtest.py">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -398,26 +397,26 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/atm/Bank.py">
+    <entry file="file://$PROJECT_DIR$/atm/Atm.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="299">
-          <caret line="39" column="55" selection-start-line="39" selection-start-column="55" selection-end-line="39" selection-end-column="55" />
+        <state relative-caret-position="272">
+          <caret line="16" column="27" selection-start-line="16" selection-start-column="27" selection-end-line="16" selection-end-column="27" />
           <folding>
-            <element signature="e#47#58#0" expanded="true" />
-            <element signature="e#115#119#0" />
-            <element signature="e#192#271#0" />
-            <element signature="e#336#410#0" />
-            <element signature="e#484#572#0" />
-            <element signature="e#991#1202#0" />
-            <element signature="e#1266#1693#0" />
+            <element signature="e#746#1061#0" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/atm/Atm.py">
+    <entry file="file://$PROJECT_DIR$/atm/Bank.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="78">
-          <caret line="15" column="34" lean-forward="true" selection-start-line="15" selection-start-column="34" selection-end-line="15" selection-end-column="34" />
+        <state relative-caret-position="163">
+          <caret line="29" column="74" selection-start-line="29" selection-start-column="74" selection-end-line="29" selection-end-column="74" />
+          <folding>
+            <element signature="e#47#58#0" expanded="true" />
+            <element signature="e#115#119#0" />
+            <element signature="e#671#919#0" />
+            <element signature="e#1262#1689#0" />
+          </folding>
         </state>
       </provider>
     </entry>

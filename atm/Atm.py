@@ -13,54 +13,60 @@ class Atm:
             value = int(value)
 
             with open("../accounts/" + account_number + ".txt", "r+") as f:
-                balance=1000     # get value of balance
+                balance=get_balance(account_number)
+                balance=int(balance)
                 os.fsync(f)
 
             if( balance >= value):
-                balance=balance-value
-                #upDate_balance(balance)
+                new_balance=balance-value
+                upDate_balance(account_number, str(new_balance))
             else:
-                print("Sorry, not fount money !!")
+                print("Sorry, not found money !!")
         else:
             print("Please, try again number account not found")
 
-    def deposit_money(self,account_number):
+    def deposit_money(self,account_number, value_deposit):
 
         if (exists("account_number.txt")):
-            value = input("Please, Enter value to deposit money:")
+            value_deposit = input("Please, Enter value to deposit money:")
+            value_deposit = int(value_deposit)
 
-            #steps 1. get balance from account file
-            #      2. do sum on balance
-            #      3. upDate balance in account file
-
-            value = int(value) # convert from str to int
-            balance = get_balance(account_number)  # get value balance in type str
-            balance = int(balance)# convert from str to int
-            new_balance=balance+value
-            upDate_balance(account_number, new_balance)
+            upDate_balance(account_number, value_deposit)
+            print (" successfully deposit ")
         else:
             print("Please, try again number account not found")
 
     def transition_history(self,account):
         print("printing transition history")
 
+
+
+
+    # method returns value of current balance in account
+    # that help method uses to upDate_balance
     @staticmethod
-    def get_balance(self, account_number):
+    def get_balance(account_number):
         with open(account_number + ".txt", "r+") as out_file:
             buf = out_file.readlines()
-            balance = buf[3]  # pointer variable balance to place of value balance
-            balance = balance[10:]  # get the number without string 'balance :'
+            balance=buf[3] # pointer variable balance to place of value balance
+            balance=balance[10:]# get the number without string 'balance :'
             out_file.close()
         return balance
 
+    # method upDates value balance in account
     @staticmethod
-    def upDate_balance(self,account_number, new_balance):
-        with open(account_number + ".txt", "w+") as out_file:
-            buf = out_file.readlines()
-            buf[3]="balance : "+new_balance
-            out_file.close()
-
-
-
+    def upDate_balance(account_number, new_balance):
+        lines=[]
+        old_balance=get_balance(account_number)
+        file=open(account_number+".txt", "r+")
+        with file:
+            for line in file:
+                if 'balance : ' in line:
+                  line= line.replace("balance : "+old_balance,"balance : "+new_balance+"\n")
+                lines.append(line)
+        file=open(account_number+".txt", "w+")
+        for item in lines:
+            file.write("%s" % item)
+        file.close()
 
 

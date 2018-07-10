@@ -57,25 +57,6 @@ class Bank():
         f.close
 
 
-bank=Bank()
-# bank.create_bank_account("ahmad", "12", "12")
-bank.create_card_for_account("833896336")
-# method returns value of balance from file of account
-def get_balance(account_number):
-    with open(account_number + ".txt", "r+") as out_file:
-        buf = out_file.readlines()
-        balance=buf[3] # pointer variable balance to place of value balance
-        balance=balance[10:]# get the number without string 'balance :'
-        out_file.close()
-    return balance
 
-value=get_balance("833896336")
-print (value)
-def upDate_balance(self,account_number):
-        with open(account_number + ".txt", "wr+") as out_file:
-            out_file.seek(0)
-            buf = out_file.readlines()
-            buf[3]="aaa"
-            out_file.close()
 
-upDate_balance("833896336")
+

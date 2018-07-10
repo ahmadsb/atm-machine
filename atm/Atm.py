@@ -20,6 +20,7 @@ class Atm:
             if( balance >= value):
                 new_balance=balance-value
                 upDate_balance(account_number, str(new_balance))
+                print (" successfully withdraw money ")
             else:
                 print("Sorry, not found money !!")
         else:
@@ -32,7 +33,7 @@ class Atm:
             value_deposit = int(value_deposit)
 
             upDate_balance(account_number, value_deposit)
-            print (" successfully deposit ")
+            print (" successfully deposit money ")
         else:
             print("Please, try again number account not found")
 

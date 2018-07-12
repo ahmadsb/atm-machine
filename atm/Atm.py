@@ -8,7 +8,7 @@ class Atm:
         print("inserting card")
 
     def withdraw_money(self, account_number):
-        if(exists("account_number.txt")):
+        if(exists(account_number+".txt")):
             value = input("Please, Enter value to withdraw money:")
             value = int(value)
 
@@ -26,9 +26,9 @@ class Atm:
         else:
             print("Please, try again number account not found")
 
-    def deposit_money(self,account_number, value_deposit):
+    def deposit_money(self,account_number):
 
-        if (exists("account_number.txt")):
+        if (exists(account_number+".txt")):
             value_deposit = input("Please, Enter value to deposit money:")
             value_deposit = int(value_deposit)
 
@@ -38,7 +38,13 @@ class Atm:
             print("Please, try again number account not found")
 
     def transition_history(self,account):
-        print("printing transition history")
+        if (exists(account+".txt")):
+            value_tran = input("Please, Enter value to transition :")
+            value_tran = int(value_tran)
+
+            upDate_balance_transition(account, value_tran)
+        else:
+            print ("file not found")
 
 
 
@@ -66,6 +72,25 @@ class Atm:
                   line= line.replace("balance : "+old_balance,"balance : "+new_balance+"\n")
                 lines.append(line)
         file=open(account_number+".txt", "w+")
+        for item in lines:
+            file.write("%s" % item)
+        file.close()
+
+    @staticmethod
+    def upDate_balance_transition(account_number,account, value_tran):
+        lines = []
+        old_balance = get_balance(account_number)
+        old_balance=int(old_balance)# casting to int
+        new_balance=old_balance+int(value_tran)
+
+        file = open(account + ".txt", "r+")
+        with file:
+            for line in file:
+                if 'balance : ' in line:
+                    line = line.replace("balance : " + old_balance, "balance : " + new_balance + "\n")
+                lines.append(line)
+        lines.append("from"+account_number+"transition: "+int(value_tran))
+        file = open(account_number + ".txt", "w+")
         for item in lines:
             file.write("%s" % item)
         file.close()

@@ -3,10 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="c16a1c75-f0ae-4b74-993b-2d85fdf01e6e" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/atm/833896336.txt" beforeDir="false" afterPath="$PROJECT_DIR$/atm/833896336.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/atm/Atm.py" beforeDir="false" afterPath="$PROJECT_DIR$/atm/Atm.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/atm/Bank.py" beforeDir="false" afterPath="$PROJECT_DIR$/atm/Bank.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/atm/atmtest.py" beforeDir="false" afterPath="$PROJECT_DIR$/atm/AtmTest.py" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/venv/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -24,7 +21,7 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="AtmTest.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="AtmTest.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/atm/AtmTest.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="119">
@@ -36,17 +33,15 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Atm.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Atm.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/atm/Atm.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="13">
-              <caret line="6" column="18" lean-forward="true" selection-start-line="6" selection-start-column="18" selection-end-line="6" selection-end-column="18" />
+            <state relative-caret-position="205">
+              <caret line="58" column="67" lean-forward="true" selection-start-line="58" selection-start-column="67" selection-end-line="58" selection-end-column="67" />
               <folding>
-                <element signature="e#243#859#0" />
-                <element signature="e#853#1473#0" />
-                <element signature="e#1525#1561#0" />
-                <element signature="e#1732#2032#0" />
-                <element signature="e#2158#2610#0" />
+                <element signature="e#243#916#0" />
+                <element signature="e#985#1329#0" />
+                <element signature="e#2015#2467#0" />
               </folding>
             </state>
           </provider>
@@ -95,7 +90,7 @@
   <component name="NodePackageJsonFileManager">
     <packageJsonPaths />
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="328" />
     <option name="y" value="99" />
     <option name="width" value="971" />
@@ -118,6 +113,19 @@
               <item name="atm-machine" type="b2602c69:ProjectViewProjectNode" />
               <item name="atm-machine" type="462c0819:PsiDirectoryNode" />
               <item name="atm" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="atm-machine" type="b2602c69:ProjectViewProjectNode" />
+              <item name="atm-machine" type="462c0819:PsiDirectoryNode" />
+              <item name="atm" type="462c0819:PsiDirectoryNode" />
+              <item name="Atm.py" type="8704e2dd:PyFileNode" />
+            </path>
+            <path>
+              <item name="atm-machine" type="b2602c69:ProjectViewProjectNode" />
+              <item name="atm-machine" type="462c0819:PsiDirectoryNode" />
+              <item name="atm" type="462c0819:PsiDirectoryNode" />
+              <item name="Atm.py" type="8704e2dd:PyFileNode" />
+              <item name="Atm" type="dd8bbb05:PyElementNode" />
             </path>
           </expand>
           <select />
@@ -142,7 +150,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.Bank">
+  <component name="RunManager" selected="Python.AtmTest">
     <configuration name="Atm" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="atm-machine" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -247,8 +255,8 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.Bank" />
         <item itemvalue="Python.AtmTest" />
+        <item itemvalue="Python.Bank" />
         <item itemvalue="Python.BankTest" />
         <item itemvalue="Python.atmtest" />
         <item itemvalue="Python.Atm" />
@@ -269,7 +277,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="7" />
     <editor active="true" />
     <layout>
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -277,7 +285,7 @@
       <window_info anchor="bottom" id="Database Changes" order="10" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="12" />
       <window_info anchor="bottom" id="Python Console" order="8" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.59516835" visible="true" weight="0.4" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.59516835" weight="0.4" />
       <window_info anchor="bottom" id="Terminal" order="9" />
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24963397" />
       <window_info anchor="bottom" id="Docker" order="11" show_stripe_button="false" />
@@ -320,6 +328,28 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/atm/AtmTest.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
+          <folding>
+            <element signature="e#0#33#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/atm/Atm.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="595">
+          <caret line="35" column="42" selection-start-line="35" selection-start-column="42" selection-end-line="35" selection-end-column="42" />
+          <folding>
+            <element signature="e#243#916#0" />
+            <element signature="e#985#1329#0" />
+            <element signature="e#2015#2467#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/atm/Bank.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="697">
@@ -404,9 +434,9 @@
         <state relative-caret-position="680">
           <caret line="55" column="17" lean-forward="true" selection-start-line="55" selection-start-column="17" selection-end-line="55" selection-end-column="17" />
           <folding>
-            <element signature="e#243#798#0" />
-            <element signature="e#2230#2510#0" />
-            <element signature="e#2011#2463#0" />
+            <element signature="e#243#916#0" />
+            <element signature="e#985#1329#0" />
+            <element signature="e#2015#2467#0" />
           </folding>
         </state>
       </provider>
@@ -440,9 +470,9 @@
         <state relative-caret-position="680">
           <caret line="55" column="17" lean-forward="true" selection-start-line="55" selection-start-column="17" selection-end-line="55" selection-end-column="17" />
           <folding>
-            <element signature="e#243#798#0" />
-            <element signature="e#2230#2510#0" />
-            <element signature="e#2011#2463#0" />
+            <element signature="e#243#916#0" />
+            <element signature="e#985#1329#0" />
+            <element signature="e#2015#2467#0" />
           </folding>
         </state>
       </provider>
@@ -469,9 +499,9 @@
         <state relative-caret-position="680">
           <caret line="55" column="17" lean-forward="true" selection-start-line="55" selection-start-column="17" selection-end-line="55" selection-end-column="17" />
           <folding>
-            <element signature="e#243#798#0" />
-            <element signature="e#2230#2510#0" />
-            <element signature="e#2011#2463#0" />
+            <element signature="e#243#916#0" />
+            <element signature="e#985#1329#0" />
+            <element signature="e#2015#2467#0" />
           </folding>
         </state>
       </provider>
@@ -647,26 +677,24 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/atm/Atm.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="13">
-          <caret line="6" column="18" lean-forward="true" selection-start-line="6" selection-start-column="18" selection-end-line="6" selection-end-column="18" />
-          <folding>
-            <element signature="e#243#859#0" />
-            <element signature="e#853#1473#0" />
-            <element signature="e#1525#1561#0" />
-            <element signature="e#1732#2032#0" />
-            <element signature="e#2158#2610#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/atm/AtmTest.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
           <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
           <folding>
             <element signature="e#0#33#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/atm/Atm.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="205">
+          <caret line="58" column="67" lean-forward="true" selection-start-line="58" selection-start-column="67" selection-end-line="58" selection-end-column="67" />
+          <folding>
+            <element signature="e#243#916#0" />
+            <element signature="e#985#1329#0" />
+            <element signature="e#2015#2467#0" />
           </folding>
         </state>
       </provider>

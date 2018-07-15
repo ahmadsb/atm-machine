@@ -1,5 +1,8 @@
 name : mustafa
 phone_number : 0527044887 
 id : 314794983
-balance : 13413512
+balance : 852
 card : 1688080099575230 : 4113
+successfully withdraw money: 88 and current balance : 852
+successfully withdraw money: 66 and current balance : 852
+successfully withdraw money: 44 and current balance : 852

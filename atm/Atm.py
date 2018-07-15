@@ -8,8 +8,8 @@ class Atm:
         print("inserting card")
 
     def withdraw_money(self, account_number):
-        print("entered")
         if(exists("../accounts/"+account_number+".txt")):
+
             value = input("Please, Enter value to withdraw money:")
             value = int(value)
 
@@ -21,11 +21,24 @@ class Atm:
             if( balance >= value):
                 new_balance=balance-value
                 self.upDate_balance(account_number, str(new_balance))
-                print (" successfully withdraw money ")
+
+                lines = []
+                file = open("../accounts/" + account_number + ".txt")
+                with file:
+                    for line in file:
+                        lines.append(line)
+                lines.append("successfully withdraw money: "+str(value)+" and current balance : "+str(new_balance)+"\n")
+                print(lines)
+                file = open("../accounts/" + account_number + ".txt", "w+")
+                for item in lines:
+                    file.write("%s" % item)
+                file.close()
+
             else:
                 print("Sorry, not found money !!")
         else:
             print("Please, try again number account not found")
+            return -1
     def append_transition(self,account_number,type,value):
 
         return
@@ -39,6 +52,18 @@ class Atm:
             self.upDate_balance(account_number, new_balance)
             self.append_transition(account_number,"deposit",value_deposit)
             print (" successfully deposit money ")
+
+            lines=[]
+            file = open("../accounts/" + account_number + ".txt")
+            with file:
+                for line in file:
+                    lines.append(line)
+            lines.append("successfully deposit money: " + str(value_deposit) + " and current balance : " + str(new_balance)+"\n")
+            print(lines)
+            file = open("../accounts/" + account_number + ".txt", "w+")
+            for item in lines:
+                file.write("%s" % item)
+            file.close()
         else:
             print("Please, try again number account not found")
 
@@ -82,23 +107,30 @@ class Atm:
         file.close()
 
 
-    def upDate_balance_transition(self,account_number,account, value_tran):
+    def transfer_money(self,account_number,account_other, amount):
         lines = []
-        old_balance = self.get_balance(account_number)
-        old_balance=int(old_balance)# casting to int
-        new_balance=old_balance+int(value_tran)
+        if (self.check_balance(account_number, amount) != -1 and exists("../accounts/" + account_other + ".txt")):
+                old_balance = self.get_balance(account_other)
+                old_balance=int(old_balance)# casting to int
+                new_balance=old_balance+int(amount)
 
-        file = open(account + ".txt", "r+")
-        with file:
-            for line in file:
-                if 'balance : ' in line:
-                    line = line.replace("balance : " + old_balance, "balance : " + new_balance + "\n")
-                lines.append(line)
-        lines.append("from"+account_number+"transition: "+int(value_tran))
-        file = open(account_number + ".txt", "w+")
-        for item in lines:
-            file.write("%s" % item)
-        file.close()
+
+
+                file = open("../accounts/" + account_other + ".txt")
+                with file:
+                    for line in file:
+                        if 'balance : ' in line:
+                            line = line.replace("balance : " + str(old_balance), "balance : " + str(new_balance) + "\n")
+                        lines.append(line)
+                lines.append("from "+account_number+" transition: "+str(amount)+"and current balance : "+str(new_balance)+"\n")
+                print(lines)
+                file = open("../accounts/" + account_other + ".txt", "w+")
+                for item in lines:
+                    file.write("%s" % item)
+                file.close()
+        else:
+            print("not enter")
+
     @staticmethod
     def check_if_card_exists(card_number):
         dictCorrect = {}
@@ -129,6 +161,32 @@ class Atm:
             else:
                 return -1
 
+    def check_balance(self, account_number, amount):
+        if (exists("../accounts/" + account_number + ".txt")):
+            amount = int(amount)
+            balance = self.get_balance(account_number)
+            balance = int(balance)
+            if (balance >= amount):
+                new_balance = balance - amount
+                self.upDate_balance(account_number, str(new_balance))
 
+                lines = []
+                file = open("../accounts/" + account_number + ".txt")
+                with file:
+                    for line in file:
+                        lines.append(line)
+                lines.append("successfully withdraw money: " + str(amount) + " and current balance : " + str(new_balance)+"\n")
+                print(lines)
+                file = open("../accounts/" + account_number + ".txt", "w+")
+                for item in lines:
+                    file.write("%s" % item)
+                file.close()
 
+                return new_balance
 
+            else:
+                print("Sorry, not found enough money !!")
+                return -1
+        else:
+            print("Please, try again number account not found")
+            return -1
